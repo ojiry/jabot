@@ -19,13 +19,20 @@ func main() {
 
 	client := github.NewClient(tc)
 
-	// list all repositories for the authenticated user
-	repos, _, err := client.Repositories.List(ctx, "", nil)
+	opt := &github.NotificationListOptions{
+		All:           true,
+		Participating: true,
+	}
+	notifications, resp, err := client.Activity.ListNotifications(ctx, opt)
 
 	if err != nil {
 		fmt.Println(err)
 		os.Exit(1)
 	}
 
-	fmt.Println(repos)
+	fmt.Println(resp)
+
+	for i, notification := range notifications {
+		fmt.Print(fmt.Sprintf("index:%d, value:%d\n", i, notification.URL))
+	}
 }
