@@ -19,18 +19,13 @@ func main() {
 
 	client := github.NewClient(tc)
 
-	opt := &github.NotificationListOptions{
-		All:           true,
-		Participating: true,
-	}
-	notifications, _, err := client.Activity.ListNotifications(ctx, opt)
+	opts := &github.SearchOptions{}
+	results, _, err := client.Search.Issues(ctx, "is:pr+commenter:ojiry", opts)
 
 	if err != nil {
 		fmt.Println(err)
 		os.Exit(1)
 	}
 
-	for i := 0; i < len(notifications); i++ {
-		fmt.Println(*notifications[i].URL)
-	}
+	fmt.Println(*results.Total)
 }
