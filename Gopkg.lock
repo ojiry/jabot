@@ -4,13 +4,13 @@ memo = "9965fcdd2c15e7b30f53842e67646452ffd377222cad46fd8a8a83eb8d59cbf4"
   branch = "master"
   name = "github.com/golang/protobuf"
   packages = ["proto"]
-  revision = "18c9bb3261723cd5401db4d0c9fbc5c3b6c70fe8"
+  revision = "7a211bcf3bce0e3f1d74f9894916e6f116ae83b4"
 
 [[projects]]
   branch = "master"
   name = "github.com/google/go-github"
   packages = ["github"]
-  revision = "c03cf196876fc0b7cf8db2516848536778ea4e29"
+  revision = "ebfec748347a9af6793c723f8859afcd906860fb"
 
 [[projects]]
   branch = "master"
@@ -22,13 +22,13 @@ memo = "9965fcdd2c15e7b30f53842e67646452ffd377222cad46fd8a8a83eb8d59cbf4"
   branch = "master"
   name = "golang.org/x/net"
   packages = ["context"]
-  revision = "feeb485667d1fdabe727840fe00adc22431bc86e"
+  revision = "445979b94b42a1f13fdf26e8bf839a566e9796f9"
 
 [[projects]]
   branch = "master"
   name = "golang.org/x/oauth2"
   packages = [".","internal"]
-  revision = "e7a48207996f497ea86f5736d08d99d45c0b6461"
+  revision = "f047394b6d14284165300fd82dad67edb3a4d7f6"
 
 [[projects]]
   name = "google.golang.org/appengine"
