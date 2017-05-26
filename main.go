@@ -11,6 +11,7 @@ import (
 
 func main() {
 	accessToken := os.Getenv("ACCESS_TOKEN")
+	query := os.Getenv("QUERY")
 	ctx := context.Background()
 	ts := oauth2.StaticTokenSource(
 		&oauth2.Token{AccessToken: accessToken},
@@ -19,7 +20,7 @@ func main() {
 
 	client := github.NewClient(tc)
 
-	results, _, err := client.Search.Issues(ctx, "user:quipper type:pr commenter:ojiry -author:ojiry", nil)
+	results, _, err := client.Search.Issues(ctx, query, nil)
 
 	if err != nil {
 		fmt.Println(err)
