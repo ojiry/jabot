@@ -19,8 +19,7 @@ func main() {
 
 	client := github.NewClient(tc)
 
-	opts := &github.SearchOptions{}
-	results, _, err := client.Search.Issues(ctx, "is:pr+commenter:ojiry+user:quipper+-author:ojiry", opts)
+	results, _, err := client.Search.Issues(ctx, "user:quipper type:pr commenter:ojiry -author:ojiry", nil)
 
 	if err != nil {
 		fmt.Println(err)
