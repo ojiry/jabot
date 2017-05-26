@@ -4,7 +4,7 @@ memo = "9965fcdd2c15e7b30f53842e67646452ffd377222cad46fd8a8a83eb8d59cbf4"
   branch = "master"
   name = "github.com/golang/protobuf"
   packages = ["proto"]
-  revision = "7a211bcf3bce0e3f1d74f9894916e6f116ae83b4"
+  revision = "7b8002443fd4a3ce5f25ef93087c524546799a56"
 
 [[projects]]
   branch = "master"
@@ -22,7 +22,7 @@ memo = "9965fcdd2c15e7b30f53842e67646452ffd377222cad46fd8a8a83eb8d59cbf4"
   branch = "master"
   name = "golang.org/x/net"
   packages = ["context"]
-  revision = "445979b94b42a1f13fdf26e8bf839a566e9796f9"
+  revision = "b8b13433cc9973c2ad1c7217f0cf4a59d00b135d"
 
 [[projects]]
   branch = "master"
